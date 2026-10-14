@@ -168,7 +168,7 @@ PANIER = '''<aside class="panier" id="panier" role="dialog" aria-modal="true" ar
 </aside>
 <div class="panier__voile" aria-hidden="true"></div>'''
 
-LETTRE = '''<section class="section" id="lettre" aria-labelledby="lettre-titre">
+LETTRE = '''<section class="section section--lettre" id="lettre" aria-labelledby="lettre-titre">
   <div class="cadre lettre">
     <div>
       <p class="surtitre">Lettre d’information</p>
@@ -257,12 +257,12 @@ def classement(s, href, sous):
     b = L[s]
     return f'''<li><a href="{href}">{livre(s, ep=5)}<span><span class="classement__titre">{b["titre"]}</span><span class="classement__auteur">{sous}</span></span><span class="prix">{prix(b["prix"])}</span></a></li>'''
 
-def dossier(s, ident, nom, lignes, p=''):
+def dossier(s, ident, nom, lignes, photo, legende, p=''):
     b = L[s]
     u = lien_livre(s, p)
     interieur = ''.join(f'<p class="dossier__ligne"><b>{k} :</b> <span class="caviar">{v}</span></p>' for k, v in lignes)
     chemise = f'''<div class="dossier__chemise">
-          <div class="dossier__interieur">{interieur}{livre(s, ep=5)}</div>
+          <div class="dossier__interieur">{interieur}<div class="dossier__pieces"><figure class="dossier__photo"><img src="{p}assets/img/dossier-{photo}.webp" alt="" width="720" height="483" loading="lazy" decoding="async"><figcaption>{legende}</figcaption></figure>{livre(s, ep=5)}</div></div>
           <div class="dossier__rabat" aria-hidden="true"><span class="dossier__code">Dossier · Espionnage</span><span class="dossier__nom">{nom}</span><span class="tampon">Confidentiel</span></div>
         </div>'''
     enveloppe = f'<a class="dossier__lien" href="{u}" tabindex="-1">{chemise}</a>' if u else f'<div class="dossier__lien">{chemise}</div>'
@@ -306,10 +306,10 @@ def accueil():
         classement('afrique', '#catalogue', 'Litsé K. Janvier · Essai'),
     ])
     dossiers = ''.join([
-        dossier('conspiration', 'dossier-cotonou', 'Cotonou', [('Lieu', 'Cotonou, Bénin'), ('Année', '2014'), ('Menace', 'un attentat contre la France')]),
-        dossier('aicha', 'dossier-saint-lazare', 'Saint-<br>Lazare', [('Lieu', 'Paris, quartier Saint-Lazare'), ('Année', '2015'), ('Menace', 'un second terroriste en France')]),
-        dossier('gabon', 'dossier-gabon', 'Libreville', [('Lieu', 'une villa de Libreville'), ('Date', '27 octobre 2019'), ('Objet', 'un coup d’État en préparation')]),
-        dossier('poutine', 'dossier-mest', 'Mest’', [('Lieu', 'Paris, 17<sup>e</sup> arrondissement'), ('Opération', '« Mest’ »'), ('Cible', 'l’Élysée')]),
+        dossier('conspiration', 'dossier-cotonou', 'Cotonou', [('Lieu', 'Cotonou, Bénin'), ('Année', '2014'), ('Menace', 'un attentat contre la France')], 'cotonou', 'Filature · Cotonou'),
+        dossier('aicha', 'dossier-saint-lazare', 'Saint-<br>Lazare', [('Lieu', 'Paris, quartier Saint-Lazare'), ('Année', '2015'), ('Menace', 'un second terroriste en France')], 'saint-lazare', 'Filature · Saint-Lazare'),
+        dossier('gabon', 'dossier-gabon', 'Libreville', [('Lieu', 'une villa de Libreville'), ('Date', '27 octobre 2019'), ('Objet', 'un coup d’État en préparation')], 'libreville', 'Filature · Libreville'),
+        dossier('poutine', 'dossier-mest', 'Mest’', [('Lieu', 'Paris, 17<sup>e</sup> arrondissement'), ('Opération', '« Mest’ »'), ('Cible', 'l’Élysée')], 'paris17', 'Filature · Paris 17e'),
     ])
     compte = {g: sum(1 for s in ORDRE_CATALOGUE if g == 'tous' or L[s]['genre'] == g) for g, _ in GENRES}
     filtres = ''.join(f'<button type="button" data-filtre="{g}" aria-pressed="{"true" if g == "tous" else "false"}">{t} <span>{compte[g]}</span></button>' for g, t in GENRES)
@@ -321,7 +321,7 @@ def accueil():
 
     corps = f'''<section class="heros" aria-labelledby="heros-titre">
   <div class="heros__scene" aria-hidden="true">
-    <div class="objet objet--livre" style="left:15%;top:34%;--rot:-9deg">{livre('poutine', ep=16, style='--ry:-26deg')}</div>
+    <div class="objet objet--livre" style="left:15%;top:34%;--rot:-9deg">{livre('poutine', ep=16, style='--ry:24deg')}</div>
     <div class="objet objet--loupe" style="left:38%;top:24%;--rot:20deg"></div>
     <div class="objet objet--feuille" style="left:56%;top:40%;--rot:5deg"><b>NOTE DE SYNTHÈSE</b>Objet : opération <span class="caviar-fixe" style="width:4.6em"></span><br>Origine : <span class="caviar-fixe" style="width:6.5em"></span><br>Lieu : Paris, 17<sup>e</sup> arr.<br><br>Plusieurs témoins <span class="caviar-fixe" style="width:8em"></span> en moins d’un mois. Le Service recommande <span class="caviar-fixe" style="width:10em"></span> et la plus grande discrétion. <span class="caviar-fixe" style="width:12em"></span> <span class="caviar-fixe" style="width:7em"></span> l’Élysée.<br><br>Agent : J. B.</div>
     <div class="objet objet--chemise" style="left:82%;top:30%;--rot:-6deg">DOSSIER<b>J. BORIS</b>DGSE<span class="tampon">Confidentiel</span></div>
@@ -428,7 +428,10 @@ def accueil():
 
 <section class="section section--jour" id="maison" data-jour aria-labelledby="maison-titre">
   <div class="cadre maison">
-    <h2 class="maison__mot" id="maison-titre">Licht<small>lumière, en allemand</small></h2>
+    <figure class="maison__visuel">
+      <img src="assets/img/maison-lampe.webp" alt="Une lampe de bureau en laiton éclaire une pile de livres" width="784" height="1168" loading="lazy" decoding="async">
+      <figcaption><h2 class="maison__mot" id="maison-titre">Licht<small>lumière, en allemand</small></h2></figcaption>
+    </figure>
     <div class="maison__texte">
       <p class="surtitre">La maison</p>
       <p>Les Éditions Licht publient, depuis Paris, des romans d’espionnage, de la poésie, des essais, des récits de vie et des livres pour entreprendre. Des voix d’ici et d’Afrique, des sujets qui éclairent le monde tel qu’il va.</p>
@@ -550,11 +553,14 @@ def fiche_poutine():
     </div>
     <div class="terrain">
       <div class="plan">{plan_svg()}</div>
+      <div class="terrain__cote">
+      <figure class="terrain__photo" data-revele><img src="../assets/img/dossier-paris17.webp" alt="Une rue du 17e arrondissement de Paris, la nuit, sous un réverbère" width="1000" height="671" loading="lazy" decoding="async"><figcaption>Paris 17<sup>e</sup>, de nuit</figcaption></figure>
       <ul class="lieux">
         <li><b>Paris 17<sup>e</sup></b><span>Rue Ampère, de nuit : un conseiller du président est braqué.</span></li>
         <li><b>Palais de l’Élysée</b><span>La cible : un homme de Moscou doit s’y infiltrer.</span></li>
         <li><b>Saint-Denis</b><span>Un rendez-vous qui tourne au guet-apens.</span></li>
       </ul>
+      </div>
     </div>
   </div>
 </section>
