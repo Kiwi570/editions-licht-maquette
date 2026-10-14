@@ -30,31 +30,31 @@ livre_def('conversations', titre='Conversations avec le diable', cv='Conversatio
           prix=1000, genre='poesie', lib='Poésie', style='poesie', c='#8a2a1c', emb='flamme', mention='Poèmes')
 livre_def('amour', titre='De l’amour et des larmes', cv='De l’amour et des larmes', auteur='Julie Martinet',
           prix=1200, genre='roman', lib='Roman', style='roman', c='#e7a5a0', fond='#1d2846', emb='larme', etiquette='Nouveauté')
-livre_def('afrique', titre='L’Afrique dans la peau', cv='L’Afrique dans la peau', auteur='Litsé K. Janvier',
-          auteur_long='Litsé K. Janvier, entretiens avec Roch Sosthène Nepo', sous='Pour une pédagogie du développement',
+livre_def('afrique', titre='L’Afrique dans la peau', cv='L’Afrique dans la peau', auteur='Janvier K. Litse',
+          auteur_long='Janvier K. Litse, entretiens avec Roch Sosthène Nepo', sous='Pour une pédagogie du développement',
           prix=2300, genre='essai', lib='Essai', style='essai', c='#f8eedf', fond='#b4532f', emb='soleil', etiquette='Nouveauté')
 livre_def('reussir2', titre='Réussir mon projet d’entreprise, tome 2', cv='Réussir mon projet d’entreprise', sous='Tome 2',
-          auteur='Hippolyte d’Almeida', prix=2100, genre='entreprendre', lib='Entreprendre', style='essai', c='#9fd3c7',
+          auteur='Hippolyte S. C. d’Almeida', prix=2100, genre='entreprendre', lib='Entreprendre', style='essai', c='#9fd3c7',
           fond='#1e4d5c', emb='escalier', etiquette='Nouveauté')
 livre_def('reussir1', titre='Réussir mon projet d’entreprise, tome 1', cv='Réussir mon projet d’entreprise', sous='Tome 1',
-          auteur='', prix=2300, genre='entreprendre', lib='Entreprendre', style='essai', c='#9fd3c7', fond='#173f4b', emb='escalier')
-livre_def('esprit', titre='L’esprit au service de l’entreprise', cv='L’esprit au service de l’entreprise', auteur='',
+          auteur='Hippolyte S. C. d’Almeida', prix=2300, genre='entreprendre', lib='Entreprendre', style='essai', c='#9fd3c7', fond='#173f4b', emb='escalier')
+livre_def('esprit', titre='L’esprit au service de l’entreprise', cv='L’esprit au service de l’entreprise', auteur='Hippolyte S. C. d’Almeida',
           prix=1850, genre='entreprendre', lib='Entreprendre', style='essai', c='#f5cf7a', fond='#23344a', emb='ampoule')
-livre_def('passion', titre='La passion de servir', cv='La passion de servir', auteur='', prix=2300, genre='essai', lib='Essai',
+livre_def('passion', titre='La passion de servir', cv='La passion de servir', auteur='Émilienne Pambo Bouassa', prix=2300, genre='essai', lib='Essai',
           style='essai', c='#f1c9a5', fond='#5c2733', emb='arcs')
-livre_def('covid', titre='L’Afrique face au Covid-19', cv='L’Afrique face au Covid-19', auteur='', prix=1800, genre='essai',
+livre_def('covid', titre='L’Afrique face au Covid-19', cv='L’Afrique face au Covid-19', auteur='Prince Bafouolo', prix=1800, genre='essai',
           lib='Essai', style='essai', c='#d8ecd0', fond='#2c5a45', emb='virus')
-livre_def('mokoko', titre='Si le Général Mokoko m’était conté', cv='Si le Général Mokoko m’était conté', auteur='', prix=850,
+livre_def('mokoko', titre='Si le Général Mokoko m’était conté', cv='Si le Général Mokoko m’était conté', auteur='Thierry-Paul Ifoundza', prix=850,
           genre='essai', lib='Essai', style='essai', c='#e9d39b', fond='#4d4126', emb='etoile')
-livre_def('croix', titre='La croix et la bannière', cv='La croix et la bannière', auteur='', prix=1850, genre='essai',
+livre_def('croix', titre='La croix et la bannière', cv='La croix et la bannière', auteur='Mike Jocktane', prix=1850, genre='essai',
           lib='Essai', style='essai', c='#e8d6f0', fond='#3b3150', emb='croix')
-livre_def('amourhaine', titre='L’amour plus fort que la haine', cv='L’amour plus fort que la haine', auteur='', prix=1850,
+livre_def('amourhaine', titre='L’amour plus fort que la haine', cv='L’amour plus fort que la haine', auteur='Clément Mbom', prix=1850,
           genre='roman', lib='Roman', style='roman', c='#f0a1a8', fond='#3a1626', emb='coeur')
-livre_def('papillon', titre='Ce que le papillon doit à la chenille', cv='Ce que le papillon doit à la chenille', auteur='',
-          prix=1800, genre='autres', lib='Littérature', style='roman', c='#f3c37a', fond='#2f3d5c', emb='papillon')
-livre_def('dieu', titre='Dieu l’homme', cv='Dieu l’homme', auteur='', prix=900, genre='autres', lib='Religion',
+livre_def('papillon', titre='Ce que le papillon doit à la chenille', cv='Ce que le papillon doit à la chenille', auteur='Rissi Abdoul',
+          prix=1800, genre='autres', lib='Récit', style='roman', c='#f3c37a', fond='#2f3d5c', emb='papillon')
+livre_def('dieu', titre='Dieu et l’homme', cv='Dieu et l’homme', auteur='Victor Jocktane', prix=900, genre='autres', lib='Religion',
           style='poesie', c='#7a5a1c', emb='rayons', mention='Religion')
-livre_def('horizon', titre='Aller plus loin que l’horizon', cv='Aller plus loin que l’horizon', auteur='', prix=1850,
+livre_def('horizon', titre='Aller plus loin que l’horizon', cv='Aller plus loin que l’horizon', auteur='Bruno Samuel Pennaneach', prix=1850,
           genre='autres', lib='Autobiographie', style='roman', c='#ffd9a0', fond='#7a4a22', emb='horizon')
 
 ORDRE_CATALOGUE = ['poutine', 'conspiration', 'aicha', 'gabon', 'taupe', 'conversations', 'amour', 'amourhaine', 'afrique',
@@ -86,10 +86,17 @@ EMB = {
     'horizon': '<path d="M6 64h88"/><path d="M28 64a22 22 0 0 1 44 0"/><path d="M18 74h64M30 84h40M42 92h16" opacity=".55"/><path d="M50 30V18M30 38l-7-8M70 38l7-8" opacity=".7"/>',
 }
 
+COUV = {"afrique": {"w": 605, "h": 908, "dos": "#f4f1ef", "texte": "#15181d", "accent": "#15181d"}, "aicha": {"w": 760, "h": 1078, "dos": "#443c3f", "texte": "#f2ece0", "accent": "#e84221"}, "amour": {"w": 760, "h": 1078, "dos": "#020302", "texte": "#f2ece0", "accent": "#ff4048"}, "amourhaine": {"w": 453, "h": 680, "dos": "#726265", "texte": "#f2ece0", "accent": "#d68e60"}, "conspiration": {"w": 697, "h": 990, "dos": "#2a2929", "texte": "#f2ece0", "accent": "#c74a45"}, "conversations": {"w": 760, "h": 1080, "dos": "#fdfdfd", "texte": "#15181d", "accent": "#46c1d1"}, "covid": {"w": 760, "h": 1216, "dos": "#b8bed6", "texte": "#15181d", "accent": "#ca4445"}, "croix": {"w": 760, "h": 1141, "dos": "#9dbcad", "texte": "#15181d", "accent": "#008d5b"}, "dieu": {"w": 760, "h": 1078, "dos": "#fcfcfc", "texte": "#15181d", "accent": "#15181d"}, "esprit": {"w": 760, "h": 1141, "dos": "#959183", "texte": "#15181d", "accent": "#15181d"}, "gabon": {"w": 714, "h": 1014, "dos": "#5b5153", "texte": "#f2ece0", "accent": "#d73838"}, "horizon": {"w": 416, "h": 594, "dos": "#d5c9ba", "texte": "#15181d", "accent": "#ec5946"}, "mokoko": {"w": 760, "h": 1216, "dos": "#cdd2d5", "texte": "#15181d", "accent": "#15181d"}, "papillon": {"w": 760, "h": 1140, "dos": "#524c4a", "texte": "#f2ece0", "accent": "#ffcc49"}, "passion": {"w": 455, "h": 682, "dos": "#404042", "texte": "#f2ece0", "accent": "#f0946a"}, "poutine": {"w": 760, "h": 1078, "dos": "#484e6d", "texte": "#f2ece0", "accent": "#e83635"}, "reussir1": {"w": 457, "h": 683, "dos": "#9d9a8d", "texte": "#15181d", "accent": "#15181d"}, "reussir2": {"w": 760, "h": 1140, "dos": "#7095a4", "texte": "#15181d", "accent": "#4e7a8c"}, "taupe": {"w": 419, "h": 592, "dos": "#1b1b1b", "texte": "#f2ece0", "accent": "#b91d19"}}
+PFX = ''
+
 def esc(s):
     return s.replace('&', '&amp;').replace('"', '&quot;').replace('<', '&lt;').replace('>', '&gt;')
 
-def couv(s):
+def couv(s, charge='lazy'):
+    if s in COUV:
+        c = COUV[s]
+        return (f'<div class="couv couv--img" data-couv="{s}" style="--ratio:{c["w"]}/{c["h"]}">'
+                f'<img src="{PFX}assets/couvertures/{s}.webp" alt="" width="{c["w"]}" height="{c["h"]}" loading="{charge}" decoding="async"></div>')
     b = L[s]
     st = b['style']
     v = [f"--c:{b['c']}"]
@@ -109,13 +116,18 @@ def couv(s):
     out.append('<span class="couv__editeur">Licht</span>')
     return f'<div class="couv couv--{st}" data-couv="{s}" style="{";".join(v)}">{"".join(out)}</div>'
 
-def livre(s, ep=14, style='', cls=''):
+def livre(s, ep=14, style='', cls='', charge='lazy'):
     b = L[s]
     fond = b.get('fond') or '#efe8da'
+    tranche = b['c']
+    ratio = ''
+    if s in COUV:
+        fond, tranche = COUV[s]['dos'], COUV[s]['texte']
+        ratio = f";--ratio:{COUV[s]['w']}/{COUV[s]['h']}"
     tr = (b['auteur'].split()[-1] + ' · ' if b['auteur'] else '') + b['titre']
-    st = f"--epx:{ep}px;--fond-dos:{fond};--c-tranche:{b['c']}" + (';' + style if style else '')
+    st = f"--epx:{ep}px;--fond-dos:{fond};--c-tranche:{tranche}{ratio}" + (';' + style if style else '')
     return (f'<div class="livre{(" " + cls) if cls else ""}" style="{st}" aria-hidden="true"><div class="livre__objet">'
-            f'<div class="livre__face">{couv(s)}</div><div class="livre__dos"></div>'
+            f'<div class="livre__face">{couv(s, charge)}</div><div class="livre__dos"></div>'
             f'<div class="livre__tranche"><span>{tr}</span></div><div class="livre__pages"></div></div></div>')
 
 def prix(c):
@@ -152,7 +164,7 @@ def pied(p, h):
       <div><h2>La maison</h2><ul><li><a href="{h}#maison">Qui sommes-nous</a></li><li><a href="{h}#auteur">Mouftaou Badarou</a></li><li><a href="#lettre">Lettre d’information</a></li><li><a href="{p}livre/la-vengeance-de-poutine.html">La vengeance de Poutine</a></li></ul></div>
       <div><h2>Nous écrire</h2><ul><li>54 avenue Hoche<br>75008 Paris</li><li><a href="mailto:leseditionslicht@yahoo.com">leseditionslicht@yahoo.com</a></li><li><a href="tel:+33784612551">+33 7 84 61 25 51</a></li></ul></div>
     </div>
-    <div class="pied__bas"><p>© Éditions Licht</p><p>Maquette de démonstration · couvertures provisoires</p></div>
+    <div class="pied__bas"><p>© Éditions Licht</p><p>Maquette de démonstration</p></div>
   </div>
 </footer>'''
 
@@ -293,6 +305,8 @@ def fiche_cat(s):
       </li>'''
 
 def accueil():
+    global PFX
+    PFX = ''
     lettres = ''.join(f'<span style="--k:{i}">{c}</span>' for i, c in enumerate('Licht'))
     nouveautes = ''.join([
         rayon('conspiration', 'Nouveauté · Espionnage'),
@@ -303,7 +317,7 @@ def accueil():
     ventes = ''.join([
         classement('poutine', L['poutine']['page'], 'Mouftaou Badarou · Espionnage'),
         classement('gabon', '#dossier-gabon', 'Mouftaou Badarou · Espionnage'),
-        classement('afrique', '#catalogue', 'Litsé K. Janvier · Essai'),
+        classement('afrique', '#catalogue', 'Janvier K. Litse · Essai'),
     ])
     dossiers = ''.join([
         dossier('conspiration', 'dossier-cotonou', 'Cotonou', [('Lieu', 'Cotonou, Bénin'), ('Année', '2014'), ('Menace', 'un attentat contre la France')], 'cotonou', 'Filature · Cotonou'),
@@ -316,17 +330,17 @@ def accueil():
     catalogue = ''.join(fiche_cat(s) for s in ORDRE_CATALOGUE)
     hauteurs = [96, 88, 92, 84, 90, 80, 94, 86, 100, 82, 90, 78, 95, 87, 87, 83, 91, 79, 93]
     rangee = ''.join(
-        f'<span class="rangee__dos" style="--fond:{L[s].get("fond") or "#efe8da"};--c:{L[s]["c"]};--h:{hauteurs[i]}%"><b>{L[s]["titre"]}</b></span>'
+        f'<span class="rangee__dos" style="--fond:{COUV[s]["dos"] if s in COUV else (L[s].get("fond") or "#efe8da")};--c:{COUV[s]["texte"] if s in COUV else L[s]["c"]};--h:{hauteurs[i]}%"><b>{L[s]["titre"]}</b></span>'
         for i, s in enumerate(ORDRE_CATALOGUE))
 
     corps = f'''<section class="heros" aria-labelledby="heros-titre">
   <div class="heros__scene" aria-hidden="true">
-    <div class="objet objet--livre" style="left:15%;top:34%;--rot:-9deg">{livre('poutine', ep=16, style='--ry:24deg')}</div>
+    <div class="objet objet--livre" style="left:15%;top:34%;--rot:-9deg">{livre('poutine', ep=16, style='--ry:24deg', charge='eager')}</div>
     <div class="objet objet--loupe" style="left:38%;top:24%;--rot:20deg"></div>
     <div class="objet objet--feuille" style="left:56%;top:40%;--rot:5deg"><b>NOTE DE SYNTHÈSE</b>Objet : opération <span class="caviar-fixe" style="width:4.6em"></span><br>Origine : <span class="caviar-fixe" style="width:6.5em"></span><br>Lieu : Paris, 17<sup>e</sup> arr.<br><br>Plusieurs témoins <span class="caviar-fixe" style="width:8em"></span> en moins d’un mois. Le Service recommande <span class="caviar-fixe" style="width:10em"></span> et la plus grande discrétion. <span class="caviar-fixe" style="width:12em"></span> <span class="caviar-fixe" style="width:7em"></span> l’Élysée.<br><br>Agent : J. B.</div>
     <div class="objet objet--chemise" style="left:82%;top:30%;--rot:-6deg">DOSSIER<b>J. BORIS</b>DGSE<span class="tampon">Confidentiel</span></div>
-    <div class="objet objet--livre" style="left:88%;top:68%;--rot:8deg">{livre('conversations', ep=10, style='--ry:22deg')}</div>
-    <div class="objet objet--livre" style="left:33%;top:66%;--rot:4deg">{livre('afrique', ep=16, style='--ry:30deg')}</div>
+    <div class="objet objet--livre" style="left:88%;top:68%;--rot:8deg">{livre('conversations', ep=10, style='--ry:22deg', charge='eager')}</div>
+    <div class="objet objet--livre" style="left:33%;top:66%;--rot:4deg">{livre('afrique', ep=16, style='--ry:30deg', charge='eager')}</div>
   </div>
   <div class="heros__nuit" aria-hidden="true"></div>
   <div class="heros__halo" aria-hidden="true"></div>
@@ -477,6 +491,8 @@ def plan_svg():
     </svg>'''
 
 def fiche_poutine():
+    global PFX
+    PFX = '../'
     p = '../'
     b = L['poutine']
     autres = ''.join([
@@ -493,7 +509,7 @@ def fiche_poutine():
     ])
     corps = f'''<section class="fiche-tete" aria-labelledby="titre-livre">
   <div class="cadre fiche-tete__grille">
-    <div class="fiche-tete__livre">{livre('poutine', ep=24)}</div>
+    <div class="fiche-tete__livre">{livre('poutine', ep=24, charge='eager')}</div>
     <div>
       <ol class="fil-ariane"><li><a href="../">Accueil</a></li><li><a href="../#catalogue">Catalogue</a></li><li><a href="../#dossiers">Espionnage</a></li><li aria-current="page">La vengeance de Poutine</li></ol>
       <p class="fiche-tete__serie">Roman d’espionnage · Une enquête de Jimmy Boris</p>
@@ -606,6 +622,8 @@ def fiche_poutine():
 
 # ---------------------------------------------------------------- 404
 def page_404():
+    global PFX
+    PFX = '/'
     corps = '''<section class="heros" aria-labelledby="heros-titre" style="min-height:80svh">
   <div class="heros__scene" aria-hidden="true"></div>
   <div class="heros__nuit" aria-hidden="true"></div>

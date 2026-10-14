@@ -11,12 +11,17 @@ Aucune étape de construction : le dossier se déploie tel quel sur Vercel.
 | `/livre/la-vengeance-de-poutine` | Fiche livre : couverture en volume, résumé caviardé qui se déclassifie, protagonistes, plan de Paris, presse, fiche technique, autres dossiers |
 | `/404` | Page introuvable, dans le même esprit |
 
-## Ce qui est provisoire
+## Images
 
-- **Couvertures** : dessinées en HTML/CSS en attendant les vraies. Pour les remplacer, mettre l'image dans `.livre__face` (ou adapter la fonction `couv()` du générateur).
+- **Couvertures** : les 19 couvertures réelles, reprises du site actuel (`assets/couvertures/`, format WebP). Elles sont un peu compressées par Wix : des fichiers en haute définition de l'éditeur rendraient la fiche livre plus nette.
+- **Images d'ambiance** (`assets/img/`) : bureau sous la lampe, photos de filature des dossiers, toits de Paris, lampe de la maison, enveloppe de la lettre. Ce sont des illustrations générées, pas des photos réelles.
+
+## Ce qui reste provisoire
+
 - **Photos** : silhouettes « Photo à venir » sur la carte de l'auteur et les fiches personnages.
 - **ISBN de La vengeance de Poutine** : marqué « à compléter ».
-- **Auteurs inconnus** : plusieurs titres du catalogue n'ont pas d'auteur affiché sur le site actuel ; la maquette n'en invente pas.
+- **Titre à vérifier** : le site actuel indique « Dieu l'homme », la couverture « Dieu et l'homme » ; la maquette suit la couverture.
+- **Auteurs** : relevés sur les couvertures quand le site ne les affichait pas.
 - **Panier** : simulé (sessionStorage). Le bouton « Commander » affiche un message, aucun paiement n'est branché.
 - **Lettre d'information** : inscription simulée.
 
@@ -26,6 +31,8 @@ Aucune étape de construction : le dossier se déploie tel quel sur Vercel.
 index.html, 404.html, livre/…      pages générées
 css/licht.css                      toute la mise en forme
 js/licht.js                        faisceau, animations, filtres, panier, fiche livre
+assets/couvertures/                couvertures des livres
+assets/img/                        images d'ambiance
 assets/fonts/                      Bodoni Moda, Schibsted Grotesk, Courier Prime, Big Shoulders (licence OFL)
 _outils/generer.py                 générateur des pages (données des livres en tête de fichier)
 vercel.json                        adresses propres (sans .html)
